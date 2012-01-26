@@ -15,6 +15,7 @@
   </div>
 </div>
 <div style="float: left;width: 179px;">
-<%= button_to 'Empty cart', cart, :method => :delete, :confirm => 'Are you sure?' %>
+  <span style="float: left;"><%= button_to "Checkout", new_order_path, :method => :get %></span>
+    <span style="float: left;"><%= button_to 'Empty cart', cart, :method => :delete, :confirm => 'Are you sure?' %></span>
 </div>
 <% end %>
