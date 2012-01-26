@@ -1,0 +1,30 @@
+root{display: block;}
+h1,h2,h3,h4,ul,li,p{margin: 0px;padding: 0px;}
+body{margin:0px;padding:0px;color:#000;font-size:12px;font-family:verdana;background-color:#394C6A; }
+#container{margin:0px auto;padding:0px 10px;width:960px;background-color:#91ADD5;}
+.header{float:left;width:960px;background-color:#F5F5F1;}
+.logo{float: left; width: 400px; margin-top: 10px;height:50px;}
+.menu{float: left;width: 960px;height: auto;background-color:#43516E;margin-top: 15px; }
+.menu ul{margin: 0px;padding: 0px;list-style-type: none;}
+.menu ul li{display: inline;}
+.menu ul li a{color: #ffffff;text-decoration: none;padding:10px;float: left;}
+.menu ul li a:hover{background-color:#fff;color: #f00; }
+.content_area{float: left;width: 960px;}
+.left_nav{float: left;width: 175px;/*padding-right:15px;*/background-color: #F0F0F0;height:200px; }
+.rightnav{float: left;width:755px;background-color: #F5F5F1;height: auto;padding: 15px;}
+
+/*catalog page styles*/
+.catalog_products{float: left;width:350px;margin:15px 15px 0 0;display: inline;height:160px;}
+.product_title{float: left;margin:5px 0;width:100%;}
+.product_image{float: left;width:150px;height:100px;}
+.product_description{ float: left;width:180px;}
+.product_price{float: left;margin-top: 10px;}
+.cart_button{float: left;width: 100%;}
+
+/*helper styles*/
+.fl{float:left;}
+.mt5{margin-top: 5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mr5{margin-right:5px;}

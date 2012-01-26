@@ -1,0 +1,23 @@
+<div style="float: left;width:730px;display:inline;"><h1>Products</h1></div>
+
+<% @products.each do |product| %>
+<div class="catalog_products">
+  <div class="product_title">
+    <h4><%= product.title %></h4>
+    
+  </div>
+  <div class="product_image">
+    <%= image_tag(product.image_url) %>
+  </div>
+  <div class="product_description">
+    <h4>Product Desription :</h4>
+    <%= truncate(strip_tags(product.description), :length => 80) %>
+  </div>
+  <div class="product_price">
+    <h4>Price : <%= number_to_currency(product.price) %></h4>
+  </div>
+    <div style="display: inline;margin:6px 0 0 5px;float:left;">
+    <%= button_to 'Add to Cart', line_items_path(:product_id => product) %>
+  </div>
+</div>
+<% end %>
