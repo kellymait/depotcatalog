@@ -1,0 +1,16 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<%= "_line_item.html" %>
+<% @cart.line_items.each do |item| %>
+  <% if line_item == @current_item %>
+<tr id= "current_item">
+<% else %>
+<tr>
+<% end %>
+  <div style="float: left;"><%= item.quantity %> &times; </div>
+  <div style="float: left;"> <%= item.product.title %></div>
+  <div style="float:right;"><%= number_to_currency(item.total_price) %></div>
+<% end %>

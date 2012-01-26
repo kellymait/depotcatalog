@@ -1,11 +1,7 @@
 <p id="notice"><%= notice %></p>
 <h2>Your Products Cart</h2>
 <div style="float: left;width:179px;">
-<% @cart.line_items.each do |item| %>
-  <div style="float: left;"><%= item.quantity %> &times; </div>
-  <div style="float: left;"> <%= item.product.title %></div>
-  <div style="float:right;"><%= number_to_currency(item.total_price) %></div>
-<% end %>
+<%= render(@cart) %>
   <div style="float: left;width: 179px;border-bottom:1px solid #000;border-top: 1px solid #000; ">
     <div style="float: left;">Total</div>
     <div style="float:right;"><%= number_to_currency(@cart.total_price) %></div>

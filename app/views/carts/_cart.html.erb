@@ -1,0 +1,20 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+
+<p id="notice"><%= notice %></p>
+<h3>Your Products Cart</h3>
+<% unless cart.line_items.empty? %>
+<div style="float: left;width:179px;">
+<%= render(cart.line_items) %>
+  <div style="float: left;width: 179px;border-bottom:1px solid #000;border-top: 1px solid #000; ">
+    <div style="float: left;">Total</div>
+    <div style="float:right;"><%= number_to_currency(cart.total_price) %></div>
+  </div>
+</div>
+<div style="float: left;width: 179px;">
+<%= button_to 'Empty cart', cart, :method => :delete, :confirm => 'Are you sure?' %>
+</div>
+<% end %>
