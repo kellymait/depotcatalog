@@ -15,7 +15,7 @@ development:
   database: depotcatalog_development
   pool: 5
   username: root
-  password: kelly1984
+  password: 
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -28,7 +28,7 @@ test:
   database: depotcatalog_test
   pool: 5
   username: root
-  password: kelly1984
+  password: 
   host: localhost
 
 production:
@@ -38,6 +38,6 @@ production:
   database: depotcatalog_production
   pool: 5
   username: root
-  password: kelly1984
+  password: 
   host: localhost
 

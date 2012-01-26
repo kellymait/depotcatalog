@@ -7,8 +7,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="container">
+   
+    <div class="header">
+      <div class="logo"><h1>Indian Bay.Com</h1></div>
+      <div class="menu">
+        <ul>
+          <li><%= link_to 'index', store_index_path %></li>
+          <li><%= link_to 'catalog'  %></li>
+          <li><%= link_to 'products', products_path%></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="content_area">
+      <div class="left_nav">
+          <h4>This is the left nav</h4>
+      </div>
+      <div class="rightnav">
 
 <%= yield %>
+</div>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
 
 </body>
 </html>
