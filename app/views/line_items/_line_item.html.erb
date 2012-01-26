@@ -10,7 +10,8 @@
 <% else %>
 <tr>
 <% end %>
-  <div style="float: left;"><%= item.quantity %> &times; </div>
-  <div style="float: left;"> <%= item.product.title %></div>
-  <div style="float:right;"><%= number_to_currency(item.total_price) %></div>
+  <div style="float: left;"><%= line_item.quantity %> &times; </div>
+  <div style="float: left;"> <%= line_item.product.title %></div>
+  <div style="float:right;"><%= number_to_currency(line_item.total_price) %></div>
 <% end %>
+</tr>
